@@ -82,9 +82,9 @@ def assistant(command):
                 smtp.starttls()
                 smtp.ehlo()
 
-                smtp.login('dkuczenski12@gmail.com', 'xvikcxcslizxfsla')
+                smtp.login('Your email address ', 'security code')
                 msg = f'Subject: {subject}\n\n{content}'
-                smtp.sendmail('dkuczenski12@gmail.com', {email} , msg)
+                smtp.sendmail('Your email address', {email} , msg)
                 smtp.close()
 
                 talkToMe('Email sent.')
